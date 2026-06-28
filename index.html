@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter & Validator</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>📦 JSON Formatter</h1>
+        <p>Format, validate and beautify JSON instantly</p>
+    </header>
+
+    <div class="card">
+
+        <div class="editor">
+
+            <div class="box">
+                <label>Input JSON</label>
+                <textarea id="input" placeholder='Paste JSON here...'></textarea>
+            </div>
+
+            <div class="box">
+                <label>Output</label>
+                <textarea id="output" readonly placeholder="Formatted JSON will appear here..."></textarea>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="formatBtn" class="primary">Format</button>
+            <button id="validateBtn">Validate</button>
+            <button id="copyBtn">Copy</button>
+            <button id="clearBtn">Clear</button>
+
+        </div>
+
+        <div id="status"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
